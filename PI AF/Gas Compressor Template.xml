@@ -1,0 +1,1956 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AF xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OSIsoft.AF.xsd" SchemaVersion="2.0" SoftwareVersion="2.9.2.8185" ExportMode="NoUniqueID, SimplifiedConfigStrings" PISystem="piserver" Database="Compressor" Description="" Created="2018-10-31T00:37:44.2899478Z" id="27b48e00-7677-4234-a540-849819d8643e" ParentKey="35e855d8-111a-453e-b966-56f314576c59" ExportedObject="Gas Compressor" ExportedType="AFElementTemplate" Identity="ElementTemplate" PIPersist="193 {9895150E-085D-4fcb-A16D-5EF5D2527196} 2\{926854a3-1f58-40d2-ba32-9eb94b583515}\ElementTemplates[{27b48e00-7677-4234-a540-849819d8643e}]*piserver\Compressor\ElementTemplates[Gas Compressor]">
+  <AFElementTemplate>
+    <Name>Gas Compressor</Name>
+    <Description>GasCompressor</Description>
+    <Type>None</Type>
+    <InstanceType>Element</InstanceType>
+    <AllowElementToExtend>true</AllowElementToExtend>
+    <AFExtendedProperty>
+      <Name>Override</Name>
+      <Value type="AFElement">BEDNORZ_A3_6_CMP</Value>
+    </AFExtendedProperty>
+    <AFAttributeTemplate>
+      <Name>Compressor Count</Name>
+      <Description>Compressor Count</Description>
+      <IsHidden>true</IsHidden>
+      <Type>Single</Type>
+      <Value type="Single">1</Value>
+      <AFAttributeCategoryRef>2. Aggregate Data</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Compressor Oil Pressure</Name>
+      <Description>Compressor Oil Pressure</Description>
+      <DefaultUOM>psi</DefaultUOM>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\%@Facility ID%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      <AFAttributeTemplate>
+        <Name>1d Avg</Name>
+        <Description>1d Average</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Avg Dev</Name>
+        <Description>1d Average Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Pct  Dev</Name>
+        <Description>1d Percent Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg</Name>
+        <Description>1hr Average</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg Dev</Name>
+        <Description>1hr Average Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Pct  Dev</Name>
+        <Description>1hr Percent Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Compressor Oil Temp</Name>
+      <Description>Compressor Oil Temperature</Description>
+      <DefaultUOM>°F</DefaultUOM>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\%@Facility ID%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      <AFAttributeTemplate>
+        <Name>1d Avg</Name>
+        <Description>1d Average</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Avg Dev</Name>
+        <Description>1d Average Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Pct  Dev</Name>
+        <Description>1d Percent Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg</Name>
+        <Description>1hr Average</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg Dev</Name>
+        <Description>1hr Average Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Pct  Dev</Name>
+        <Description>1hr Percent Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Compressor Stages</Name>
+      <Description>Compressor Stages</Description>
+      <Type>Int16</Type>
+      <Value type="Int16">3</Value>
+      <AFAttributeCategoryRef>3. Header Info</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Cylinder 1 Discharge Temp</Name>
+      <Description>Cylinder 1 Discharge Temperature</Description>
+      <DefaultUOM>°F</DefaultUOM>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\%@Facility ID%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      <AFAttributeTemplate>
+        <Name>1d Avg</Name>
+        <Description>1d Average</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Avg Dev</Name>
+        <Description>1d Average Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Pct  Dev</Name>
+        <Description>1d Percent Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg</Name>
+        <Description>1hr Average</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg Dev</Name>
+        <Description>1hr Average Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Pct  Dev</Name>
+        <Description>1hr Percent Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Cylinder 2 Discharge Temp</Name>
+      <Description>Cylinder 2 Discharge Temperature</Description>
+      <DefaultUOM>°F</DefaultUOM>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\%@Facility ID%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      <AFAttributeTemplate>
+        <Name>1d Avg</Name>
+        <Description>1d Average</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Avg Dev</Name>
+        <Description>1d Average Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Pct  Dev</Name>
+        <Description>1d Percent Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg</Name>
+        <Description>1hr Average</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg Dev</Name>
+        <Description>1hr Average Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Pct  Dev</Name>
+        <Description>1hr Percent Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Cylinder 3 Discharge Temp</Name>
+      <Description>Cylinder 3 Discharge Temperature</Description>
+      <DefaultUOM>°F</DefaultUOM>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\%@Facility ID%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      <AFAttributeTemplate>
+        <Name>1d Avg</Name>
+        <Description>1d Average</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Avg Dev</Name>
+        <Description>1d Average Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Pct  Dev</Name>
+        <Description>1d Percent Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg</Name>
+        <Description>1hr Average</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg Dev</Name>
+        <Description>1hr Average Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Pct  Dev</Name>
+        <Description>1hr Percent Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Cylinder 4 Discharge Temp</Name>
+      <Description>Cylinder 4 Discharge Temperature</Description>
+      <DefaultUOM>°F</DefaultUOM>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\%@Facility ID%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      <AFAttributeTemplate>
+        <Name>1d Avg</Name>
+        <Description>1d Average</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Avg Dev</Name>
+        <Description>1d Average Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Pct  Dev</Name>
+        <Description>1d Percent Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg</Name>
+        <Description>1hr Average</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg Dev</Name>
+        <Description>1hr Average Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Pct  Dev</Name>
+        <Description>1hr Percent Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Downtime Hrs 7d</Name>
+      <Description>Downtime Hours 7 Days</Description>
+      <DefaultUOM>h</DefaultUOM>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\ANALYSIS::%@Facility ID%.%Attribute%;UOM=h;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>2. Aggregate Data</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Downtime Hrs Yest</Name>
+      <Description>Downtime Hours Yesterday</Description>
+      <DefaultUOM>h</DefaultUOM>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\ANALYSIS::%@Facility ID%.%Attribute%;UOM=h;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>2. Aggregate Data</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Engine Oil Pressure</Name>
+      <Description>Engine Oil Pressure</Description>
+      <DefaultUOM>psi</DefaultUOM>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\%@Facility ID%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      <AFAttributeTemplate>
+        <Name>1d Avg</Name>
+        <Description>1d Average</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Avg Dev</Name>
+        <Description>1d Average Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Pct  Dev</Name>
+        <Description>1d Percent Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg</Name>
+        <Description>1hr Average</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg Dev</Name>
+        <Description>1hr Average Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Pct  Dev</Name>
+        <Description>1hr Percent Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Engine Oil Temp</Name>
+      <Description>Engine Oil Temperature</Description>
+      <DefaultUOM>°F</DefaultUOM>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\%@Facility ID%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      <AFAttributeTemplate>
+        <Name>1d Avg</Name>
+        <Description>1d Average</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Avg Dev</Name>
+        <Description>1d Average Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Pct  Dev</Name>
+        <Description>1d Percent Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg</Name>
+        <Description>1hr Average</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg Dev</Name>
+        <Description>1hr Average Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Pct  Dev</Name>
+        <Description>1hr Percent Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Facility ID</Name>
+      <Type>String</Type>
+      <Value type="String"></Value>
+      <AFAttributeCategoryRef>System</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Fuel Pressure</Name>
+      <Description>Fuel Pressure</Description>
+      <DefaultUOM>psi</DefaultUOM>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\%@Facility ID%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      <AFAttributeTemplate>
+        <Name>1d Avg</Name>
+        <Description>1d Average</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Avg Dev</Name>
+        <Description>1d Average Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Pct  Dev</Name>
+        <Description>1d Percent Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg</Name>
+        <Description>1hr Average</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg Dev</Name>
+        <Description>1hr Average Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Pct  Dev</Name>
+        <Description>1hr Percent Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Gas Flow Rate</Name>
+      <Description>Gas Flow Rate</Description>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\ANALYSIS::%@Facility ID%.%Attribute%;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>2. Aggregate Data</AFAttributeCategoryRef>
+      <AFAttributeTemplate>
+        <Name>Maximum</Name>
+        <Trait>Maximum</Trait>
+        <Value type="Single">1800</Value>
+        <DataReference>String Builder</DataReference>
+        <ConfigString>'|Max Gas Flowrate';</ConfigString>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>Minimum</Name>
+        <Trait>Minimum</Trait>
+        <Value type="Single">0</Value>
+      </AFAttributeTemplate>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Gas Flow Rate_RAW</Name>
+      <Description>Compressor Gas Flow Rate</Description>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\ANALYSIS::%@Facility ID%.%Attribute%;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>2. Aggregate Data</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Horsepower</Name>
+      <Description>Horsepower</Description>
+      <DefaultUOM>hp</DefaultUOM>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\%@Facility ID%.%Attribute%;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>3. Header Info</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Ideal Flow Rate</Name>
+      <Description>Ideal Flow Rate</Description>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\ANALYSIS::%@Facility ID%.%Attribute%;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>2. Aggregate Data</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Last Successful Comm Time</Name>
+      <Description>Last Successful Comm Time</Description>
+      <Type>String</Type>
+      <Value type="String">10/17/2016 5:00:00 AM</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\40.122.32.229\%@Facility ID%.%Attribute%;pointtype=String</ConfigString>
+      <AFAttributeCategoryRef>Comm Stats</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Max Discharge Pressure</Name>
+      <Description>Maximum Discharge Pressure</Description>
+      <DefaultUOM>psi</DefaultUOM>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\%@Facility ID%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>3. Header Info</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Max Gas Flowrate</Name>
+      <Description>Maximum Gas Flowrate</Description>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\%@Facility ID%.%Attribute%;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>3. Header Info</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Max RPMs</Name>
+      <Description>Maximum Revolutions Per Minute</Description>
+      <DefaultUOM>rpm</DefaultUOM>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\%@Facility ID%.%Attribute%;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>3. Header Info</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Max Suction Pressure</Name>
+      <Description>Maximum Suction Pressure</Description>
+      <DefaultUOM>psi</DefaultUOM>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\%@Facility ID%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>3. Header Info</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Pct Successful Msgs Today</Name>
+      <Description>Percent Successful Messages Today</Description>
+      <DefaultUOM>%</DefaultUOM>
+      <Type>Int64</Type>
+      <Value type="Int64">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\40.122.32.229\%@Facility ID%.%Attribute%;pointtype=Int32</ConfigString>
+      <AFAttributeCategoryRef>Comm Stats</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>PI Server</Name>
+      <Description>PI Server</Description>
+      <Type>String</Type>
+      <Value type="String">piserver</Value>
+      <AFAttributeCategoryRef>System</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>RPM</Name>
+      <Description>Revolutions Per Minute</Description>
+      <DefaultUOM>rpm</DefaultUOM>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\%@Facility ID%.%Attribute%;UOM=rpm;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      <AFAttributeTemplate>
+        <Name>1d Avg</Name>
+        <Description>1d Average</Description>
+        <DefaultUOM>rpm</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=rpm;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Avg Dev</Name>
+        <Description>1d Average Deviation</Description>
+        <DefaultUOM>rpm</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=rpm;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Pct  Dev</Name>
+        <Description>1d Percent Deviation</Description>
+        <DefaultUOM>rpm</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=rpm;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg</Name>
+        <Description>1hr Average</Description>
+        <DefaultUOM>rpm</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=rpm;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg Dev</Name>
+        <Description>1hr Average Deviation</Description>
+        <DefaultUOM>rpm</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=rpm;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Pct  Dev</Name>
+        <Description>1hr Percent Deviation</Description>
+        <DefaultUOM>rpm</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=rpm;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>7 Day Avg</Name>
+        <Description>7 Day Average</Description>
+        <DefaultUOM>rpm</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\ANALYSIS::%@|Facility ID%.%|Attribute%.%Attribute%;UOM=rpm;pointtype=Float32</ConfigString>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>Maximum</Name>
+        <Trait>Maximum</Trait>
+        <Value type="Single">1800</Value>
+        <DataReference>String Builder</DataReference>
+        <ConfigString>'|Max RPMs';</ConfigString>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>Minimum</Name>
+        <Trait>Minimum</Trait>
+        <Value type="Single">0</Value>
+      </AFAttributeTemplate>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Run Status</Name>
+      <Description>Run Status</Description>
+      <Type>String</Type>
+      <Value type="String"></Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\%@Facility ID%.%Attribute%;pointtype=String</ConfigString>
+      <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      <AFAttributeTemplate>
+        <Name>Run Status Bit</Name>
+        <Description>Run Status Bit</Description>
+        <Type>String</Type>
+        <Value type="String">0</Value>
+        <DataReference>String Builder</DataReference>
+        <ConfigString>LEFT('|Run Status',1);</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Runtime Hrs</Name>
+      <Description>Runtime Hours</Description>
+      <DefaultUOM>h</DefaultUOM>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\%@Facility ID%.%Attribute%;UOM=h;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>SD Status Code</Name>
+      <Description>Shutdown Status Code</Description>
+      <Type>String</Type>
+      <Value type="String"></Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\%@Facility ID%.%Attribute%;pointtype=String</ConfigString>
+      <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Stage 1 Discharge Pressure</Name>
+      <Description>Stage 1 Discharge Pressure</Description>
+      <DefaultUOM>psi</DefaultUOM>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\%@Facility ID%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      <AFAttributeTemplate>
+        <Name>1d Avg</Name>
+        <Description>1d Average</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Avg Dev</Name>
+        <Description>1d Average Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Pct  Dev</Name>
+        <Description>1d Percent Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg</Name>
+        <Description>1hr Average</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg Dev</Name>
+        <Description>1hr Average Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Pct  Dev</Name>
+        <Description>1hr Percent Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Stage 2 Discharge Pressure</Name>
+      <Description>Stage 2 Discharge Pressure</Description>
+      <DefaultUOM>psi</DefaultUOM>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\%@Facility ID%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      <AFAttributeTemplate>
+        <Name>1d Avg</Name>
+        <Description>1d Average</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Avg Dev</Name>
+        <Description>1d Average Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Pct  Dev</Name>
+        <Description>1d Percent Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg</Name>
+        <Description>1hr Average</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg Dev</Name>
+        <Description>1hr Average Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Pct  Dev</Name>
+        <Description>1hr Percent Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Stage 3 Discharge Pressure</Name>
+      <Description>Stage 3 Discharge Pressure</Description>
+      <DefaultUOM>psi</DefaultUOM>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\%@Facility ID%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      <AFAttributeTemplate>
+        <Name>1d Avg</Name>
+        <Description>1d Average</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Avg Dev</Name>
+        <Description>1d Average Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Pct  Dev</Name>
+        <Description>1d Percent Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg</Name>
+        <Description>1hr Average</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg Dev</Name>
+        <Description>1hr Average Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Pct  Dev</Name>
+        <Description>1hr Percent Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>Maximum</Name>
+        <Trait>Maximum</Trait>
+        <Value type="Single">1800</Value>
+        <DataReference>String Builder</DataReference>
+        <ConfigString>'|Max Discharge Pressure';</ConfigString>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>Minimum</Name>
+        <Trait>Minimum</Trait>
+        <Value type="Single">0</Value>
+        <DataReference>String Builder</DataReference>
+        <ConfigString>'|Stage 2 Discharge Pressure';</ConfigString>
+      </AFAttributeTemplate>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Successful Msgs Today</Name>
+      <Description>Successful Messages Today</Description>
+      <Type>Int64</Type>
+      <Value type="Int64">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\%@Facility ID%.%Attribute%;pointtype=int32</ConfigString>
+      <AFAttributeCategoryRef>Comm Stats</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Suction Pressure</Name>
+      <Description>Suction Pressure</Description>
+      <DefaultUOM>psi</DefaultUOM>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\%@Facility ID%.%Attribute%;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      <AFAttributeTemplate>
+        <Name>1d Avg</Name>
+        <Description>1d Average</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Avg Dev</Name>
+        <Description>1d Average Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Pct  Dev</Name>
+        <Description>1d Percent Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg</Name>
+        <Description>1hr Average</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg Dev</Name>
+        <Description>1hr Average Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Pct  Dev</Name>
+        <Description>1hr Percent Deviation</Description>
+        <DefaultUOM>psi</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=psi;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>7 Day Avg</Name>
+        <Description>7 Day Average</Description>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\ANALYSIS::%@|Facility ID%.%|Attribute%.%Attribute%;pointtype=Float32</ConfigString>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>Maximum</Name>
+        <Description>Maximum</Description>
+        <Trait>Maximum</Trait>
+        <Value type="Single">1800</Value>
+        <DataReference>String Builder</DataReference>
+        <ConfigString>'|Max Suction Pressure';</ConfigString>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>Minimum</Name>
+        <Description>Minimum</Description>
+        <Trait>Minimum</Trait>
+        <Value type="Single">0</Value>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>Suc Pr fixed</Name>
+        <Description>Suction Pressure Fixed</Description>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>Formula</DataReference>
+        <ConfigString>M=|Max Suction Pressure;P=|Suction Pressure;[if (P / 100 &gt; 1) then (P/10) else P]</ConfigString>
+      </AFAttributeTemplate>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Suction Temp</Name>
+      <Description>Suction Temperature</Description>
+      <DefaultUOM>°F</DefaultUOM>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\%@Facility ID%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      <AFAttributeTemplate>
+        <Name>1d Avg</Name>
+        <Description>1d Average</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Avg Dev</Name>
+        <Description>1d Average Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1d Pct  Dev</Name>
+        <Description>1d Percent Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg</Name>
+        <Description>1hr Average</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Avg Dev</Name>
+        <Description>1hr Average Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <Name>1hr Pct  Dev</Name>
+        <Description>1hr Percent Deviation</Description>
+        <DefaultUOM>°F</DefaultUOM>
+        <Type>Single</Type>
+        <Value type="Single">0</Value>
+        <DataReference>PI Point</DataReference>
+        <ConfigString>\\%@|PI Server%\%@|Facility ID%.%|Attribute%.%Attribute%;UOM=°F;pointtype=Float32</ConfigString>
+        <AFAttributeCategoryRef>1. Operational Data</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>SuctionPressureDecreasing</Name>
+      <Type>Double</Type>
+      <Value type="Double">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%Server%\%Element%.%Attribute%;pointtype=Float64</ConfigString>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Throughput</Name>
+      <Description>Throughput</Description>
+      <DefaultUOM>%</DefaultUOM>
+      <Type>Single</Type>
+      <Value type="Single">0</Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\ANALYSIS::%@Facility ID%.Throughput;pointtype=Float32</ConfigString>
+      <AFAttributeCategoryRef>2. Aggregate Data</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>TOW Comp Name</Name>
+      <Description>TOW Comp Name</Description>
+      <Type>String</Type>
+      <Value type="String"></Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\%@Facility ID%.%Attribute%;pointtype=String</ConfigString>
+      <AFAttributeCategoryRef>System</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAttributeTemplate>
+      <Name>Unit Size</Name>
+      <Description>Unit Size</Description>
+      <Type>String</Type>
+      <Value type="String"></Value>
+      <DataReference>PI Point</DataReference>
+      <ConfigString>\\%@PI Server%\%@Facility ID%.%Attribute%;pointtype=string</ConfigString>
+      <AFAttributeCategoryRef>3. Header Info</AFAttributeCategoryRef>
+    </AFAttributeTemplate>
+    <AFAnalysisTemplate>
+      <Name>Cmp Oil Pr Avgs</Name>
+      <Description>Cmp Oil Pr Averages</Description>
+      <Target>Gas Compressor</Target>
+      <AFAnalysisRule>
+        <AFPlugIn>PerformanceEquation</AFPlugIn>
+        <ConfigString>X := '{88fcd3df-3464-4641-9f51-6349a3856a91};Compressor Oil Pressure';&#xD;
+Good__Data := BadVal(X);&#xD;
+Avg__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1h', '*');&#xD;
+Avg__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1hr;&#xD;
+Pct__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1hr * 100;&#xD;
+Avg__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1d', '*');&#xD;
+Avg__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1d;&#xD;
+Pct__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1d * 100;</ConfigString>
+        <VariableMapping>1dAvg||Compressor Oil Pressure|1d Avg;[GUID]||{01166be5-8e2b-4047-be7c-4144f3a79c9f};Avg__1hr||Compressor Oil Pressure|1hr Avg;[GUID]||{073a2bd9-9b33-4133-a54c-c211b0c7959f};Avg__1d||Compressor Oil Pressure|1d Avg;[GUID]||{01166be5-8e2b-4047-be7c-4144f3a79c9f};Avg__Dev__1hr||Compressor Oil Pressure|1hr Avg Dev;[GUID]||{579e55ea-66c6-46fb-8d32-c9d6bb6a5aaf};Pct__Dev__1hr||Compressor Oil Pressure|1hr Pct  Dev;[GUID]||{242b165b-690e-482f-8963-43ac8c855124};Avg__Dev__1d||Compressor Oil Pressure|1d Avg Dev;[GUID]||{daadfe31-6c22-46e0-8848-7e09b9f1cfb0};Pct__Dev__1d||Compressor Oil Pressure|1d Pct  Dev;[GUID]||{104b69b1-2d0b-4189-807b-cb6914e67e54};[GUID]||[UNSET];</VariableMapping>
+      </AFAnalysisRule>
+      <AFTimeRule>
+        <AFPlugIn>Natural</AFPlugIn>
+      </AFTimeRule>
+    </AFAnalysisTemplate>
+    <AFAnalysisTemplate>
+      <Name>Cmp Oil Temp Avgs</Name>
+      <Description>Compressor Oil Temperature Averages</Description>
+      <Target>Gas Compressor</Target>
+      <AFAnalysisRule>
+        <AFPlugIn>PerformanceEquation</AFPlugIn>
+        <ConfigString>X := '{dc0e36be-b1cc-449d-87d2-46c426b5b9cf};Compressor Oil Temp';&#xD;
+Good__Data := BadVal(X);&#xD;
+Avg__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1h', '*');&#xD;
+Avg__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X -Avg__1hr;&#xD;
+Pct__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1hr * 100;&#xD;
+Avg__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1d', '*');&#xD;
+Avg__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1d;&#xD;
+Pct__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1d * 100;</ConfigString>
+        <VariableMapping>Avg__1hr||Compressor Oil Temp|1hr Avg;[GUID]||{dae978d1-7f98-4754-bc63-aad29f4374b7};Avg__Dev__1hr||Compressor Oil Temp|1hr Avg Dev;[GUID]||{1e6f67bd-ca3a-4fdf-abe1-87d4e97da27c};Pct__Dev__1hr||Compressor Oil Temp|1hr Pct  Dev;[GUID]||{309cf1ff-707f-421e-83e0-f12aa7a6b5c4};Avg__1d||Compressor Oil Temp|1d Avg;[GUID]||{482a0c86-f4f7-4bd7-9cc0-f5609b359317};Avg__Dev__1d||Compressor Oil Temp|1d Avg Dev;[GUID]||{47733273-98c5-42df-a0ca-17ad6d7aae02};Pct__Dev__1d||Compressor Oil Temp|1d Pct  Dev;[GUID]||{bdd1f96e-0979-48f0-92cc-e09c7193c578};[GUID]||[UNSET];</VariableMapping>
+      </AFAnalysisRule>
+      <AFTimeRule>
+        <AFPlugIn>Natural</AFPlugIn>
+      </AFTimeRule>
+    </AFAnalysisTemplate>
+    <AFAnalysisTemplate>
+      <Name>Cyl 1 Dsch Temp Avgs</Name>
+      <Target>Gas Compressor</Target>
+      <AFAnalysisRule>
+        <AFPlugIn>PerformanceEquation</AFPlugIn>
+        <ConfigString>X := '{949cf35b-624e-47ff-8283-86026d07bf37};Cylinder 1 Discharge Temp';&#xD;
+Good__Data := BadVal(X);&#xD;
+Avg__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1h', '*');&#xD;
+Avg__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1hr;&#xD;
+Pct__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1hr * 100;&#xD;
+Avg__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1d', '*');&#xD;
+Avg__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1d;&#xD;
+Pct__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1d * 100;</ConfigString>
+        <VariableMapping>Avg__1hr||Cylinder 1 Discharge Temp|1hr Avg;[GUID]||{e6acdcde-4e65-471e-bf29-8bdcd0c67591};Avg__Dev__1hr||Cylinder 1 Discharge Temp|1hr Avg Dev;[GUID]||{c4ab1441-2f5a-4acd-bd56-bd4ec5de9a37};Pct__Dev__1hr||Cylinder 1 Discharge Temp|1hr Pct  Dev;[GUID]||{14eec0c1-f2a7-4832-b805-7cc6930db45b};Avg__1d||Cylinder 1 Discharge Temp|1d Avg;[GUID]||{d9ac8d95-d8c9-4512-829b-cc1792f50fba};Avg__Dev__1d||Cylinder 1 Discharge Temp|1d Avg Dev;[GUID]||{97463f59-0874-47e8-9c70-b28a4fc52b41};Pct__Dev__1d||Cylinder 1 Discharge Temp|1d Pct  Dev;[GUID]||{a44d0ae1-cd75-4e32-ab96-38263883a718};[GUID]||[UNSET];</VariableMapping>
+      </AFAnalysisRule>
+      <AFTimeRule>
+        <AFPlugIn>Natural</AFPlugIn>
+      </AFTimeRule>
+    </AFAnalysisTemplate>
+    <AFAnalysisTemplate>
+      <Name>Cyl 2 Dsch Temp Avgs</Name>
+      <Target>Gas Compressor</Target>
+      <AFAnalysisRule>
+        <AFPlugIn>PerformanceEquation</AFPlugIn>
+        <ConfigString>X := '{ee2e81b0-5f39-40cf-81ed-646cb8047fc1};Cylinder 2 Discharge Temp';&#xD;
+Good__Data := BadVal(X);&#xD;
+Avg__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1h', '*');&#xD;
+Avg__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1hr;&#xD;
+Pct__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1hr * 100;&#xD;
+Avg__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1d', '*');&#xD;
+Avg__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1d;&#xD;
+Pct__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1d * 100;</ConfigString>
+        <VariableMapping>Avg__1hr||Cylinder 2 Discharge Temp|1hr Avg;[GUID]||{f5556802-9137-4ad5-ab4f-b61ccd26eb33};Avg__Dev__1hr||Cylinder 2 Discharge Temp|1hr Avg Dev;[GUID]||{959ed6c5-831c-4be9-84c1-dc7fdc7542aa};Pct__Dev__1hr||Cylinder 2 Discharge Temp|1hr Pct  Dev;[GUID]||{50987058-bdbf-4db3-aa4a-e61bc7108852};Avg__1d||Cylinder 2 Discharge Temp|1d Avg;[GUID]||{f36d08d5-371f-4382-8a82-db1f42b2bc0f};Avg__Dev__1d||Cylinder 2 Discharge Temp|1d Avg Dev;[GUID]||{a2035ef8-b609-480b-b105-a24e437a539f};Pct__Dev__1d||Cylinder 2 Discharge Temp|1d Pct  Dev;[GUID]||{ffca7fd0-d240-4a34-8f72-eafe9283583f};[GUID]||[UNSET];</VariableMapping>
+      </AFAnalysisRule>
+      <AFTimeRule>
+        <AFPlugIn>Natural</AFPlugIn>
+      </AFTimeRule>
+    </AFAnalysisTemplate>
+    <AFAnalysisTemplate>
+      <Name>Cyl 3 Dsch Temp Avgs</Name>
+      <Target>Gas Compressor</Target>
+      <AFAnalysisRule>
+        <AFPlugIn>PerformanceEquation</AFPlugIn>
+        <ConfigString>X := '{ee2a4b89-5042-43b3-9291-f3bbd00264ae};Cylinder 3 Discharge Temp';&#xD;
+Good__Data := BadVal(X);&#xD;
+Avg__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1h', '*');&#xD;
+Avg__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1hr;&#xD;
+Pct__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1hr * 100;&#xD;
+Avg__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1d', '*');&#xD;
+Avg__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1d;&#xD;
+Pct__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1d * 100;</ConfigString>
+        <VariableMapping>Avg__1hr||Cylinder 3 Discharge Temp|1hr Avg;[GUID]||{a08a4435-da0c-4733-8a2c-75d42f6c59de};Avg__Dev__1hr||Cylinder 3 Discharge Temp|1hr Avg Dev;[GUID]||{e9435c28-04e0-435f-984e-f4a888139c95};Pct__Dev__1hr||Cylinder 3 Discharge Temp|1hr Pct  Dev;[GUID]||{f316f162-b358-4872-8a4a-730596618f58};Avg__1d||Cylinder 3 Discharge Temp|1d Avg;[GUID]||{ab929bd6-44ce-40cf-bb15-915673e572bc};Avg__Dev__1d||Cylinder 3 Discharge Temp|1d Avg Dev;[GUID]||{9769e507-cbe6-403b-b1a8-1dba0dad6768};Pct__Dev__1d||Cylinder 3 Discharge Temp|1d Pct  Dev;[GUID]||{dc14434f-943d-42d4-9b53-35c100717a0d};[GUID]||[UNSET];</VariableMapping>
+      </AFAnalysisRule>
+      <AFTimeRule>
+        <AFPlugIn>Natural</AFPlugIn>
+      </AFTimeRule>
+    </AFAnalysisTemplate>
+    <AFAnalysisTemplate>
+      <Name>Cyl 4 Dsch Temp Avgs</Name>
+      <Target>Gas Compressor</Target>
+      <AFAnalysisRule>
+        <AFPlugIn>PerformanceEquation</AFPlugIn>
+        <ConfigString>X := '{867376be-6c3a-4d9c-9024-0d7abaede076};Cylinder 4 Discharge Temp';&#xD;
+Good__Data := BadVal(X);&#xD;
+Avg__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1h', '*');&#xD;
+Avg__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1hr;&#xD;
+Pct__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1hr * 100;&#xD;
+Avg__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1d', '*');&#xD;
+Avg__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1d;&#xD;
+Pct__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1d * 100;</ConfigString>
+        <VariableMapping>Avg__1hr||Cylinder 4 Discharge Temp|1hr Avg;[GUID]||{9d5e1eb5-575a-4b83-86e1-624516ba6f22};Avg__Dev__1hr||Cylinder 4 Discharge Temp|1hr Avg Dev;[GUID]||{260848ea-18ee-419e-933c-c11a17d93ccf};Pct__Dev__1hr||Cylinder 4 Discharge Temp|1hr Pct  Dev;[GUID]||{14cf3276-5568-4d6f-987a-b7f49f9820c9};Avg__1d||Cylinder 4 Discharge Temp|1d Avg;[GUID]||{015f71e8-7b8b-4e36-ad83-2f3baa1c2d35};Avg__Dev__1d||Cylinder 4 Discharge Temp|1d Avg Dev;[GUID]||{2c14336d-3da6-458b-91ee-9234ebed6e11};Pct__Dev__1d||Cylinder 4 Discharge Temp|1d Pct  Dev;[GUID]||{919c38b6-ec36-4d07-97fa-17c47f978f0c};[GUID]||[UNSET];</VariableMapping>
+      </AFAnalysisRule>
+      <AFTimeRule>
+        <AFPlugIn>Natural</AFPlugIn>
+      </AFTimeRule>
+    </AFAnalysisTemplate>
+    <AFAnalysisTemplate>
+      <Name>Downtime Event</Name>
+      <Target>Gas Compressor</Target>
+      <AFAnalysisCategoryRef>DowntimeEvent</AFAnalysisCategoryRef>
+      <AFAnalysisRule>
+        <AFPlugIn>EventFrame</AFPlugIn>
+        <ConfigString>EFTGUID=f53d6b0a-4b70-4c8d-8651-704eb47bf069;EFTNAME=Template1;RCTIMEVALUE=3600;SAVETRIGGEREXPRESSION=True</ConfigString>
+        <AFAnalysisRule>
+          <AFPlugIn>PerformanceEquation</AFPlugIn>
+          <ConfigString>@group("Variables")&#xD;
+lcShutdownCode := Trim(LCase('{502d60d1-4228-4881-91f4-0e9fb0afa1fd};SD Status Code'));&#xD;
+&#xD;
+@group("Variables")&#xD;
+lcRunStatus := Trim(LCase('{040ba2d7-9660-403e-8a9f-cedaba6016a6};Run Status'));&#xD;
+&#xD;
+@group("Start triggers") @timetrue("60") @timetruetype("clock")&#xD;
+StartTrigger := lcShutdownCode &lt;&gt; "no fault present" and not Contains(lcShutdownCode, "comm fail") and lcRunStatus &lt;&gt; "standby";&#xD;
+&#xD;
+@group("End triggers")&#xD;
+EndTrigger := lcShutdownCode = "no fault present";</ConfigString>
+        </AFAnalysisRule>
+      </AFAnalysisRule>
+      <AFTimeRule>
+        <AFPlugIn>Natural</AFPlugIn>
+        <ConfigString>"{502d60d1-4228-4881-91f4-0e9fb0afa1fd};SD Status Code"</ConfigString>
+      </AFTimeRule>
+    </AFAnalysisTemplate>
+    <AFAnalysisTemplate>
+      <Name>Downtime Hours 1d / 7d</Name>
+      <Description>Downtime Hours 1d / 7d</Description>
+      <Target>Gas Compressor</Target>
+      <AFAnalysisRule>
+        <AFPlugIn>PerformanceEquation</AFPlugIn>
+        <ConfigString>SecPerDay := 60*60*24;&#xD;
+SecPerWeek := SecPerDay * 7;&#xD;
+Downtime1d := IF NOT BadVal('{040ba2d7-9660-403e-8a9f-cedaba6016a6};Run Status')&#xD;
+THEN Convert(SecPerDay - TimeEq('{040ba2d7-9660-403e-8a9f-cedaba6016a6};Run Status', 'y', 't', "1-RUNNING       "), "h")&#xD;
+ELSE NoOutput();&#xD;
+Downtime7d := IF NOT BadVal('{040ba2d7-9660-403e-8a9f-cedaba6016a6};Run Status')&#xD;
+THEN Convert(SecPerWeek- TimeEq('{040ba2d7-9660-403e-8a9f-cedaba6016a6};Run Status', 't-1w', 't', "1-RUNNING       "), "h")&#xD;
+ELSE NoOutput();</ConfigString>
+        <VariableMapping>Downtime7d||Downtime Hrs 7d;[GUID]||{5dad4d5e-aaa9-4737-8d87-9e3c14012126};Downtime1d||Downtime Hrs Yest;[GUID]||{f5012928-f7bd-4e36-9b32-04db5fdaf8d7};[GUID]||[UNSET];</VariableMapping>
+      </AFAnalysisRule>
+      <AFTimeRule>
+        <AFPlugIn>Periodic</AFPlugIn>
+        <ConfigString>Offset=3600;Day=Sun, Mon, Tue, Wed, Thu, Fri, Sat</ConfigString>
+      </AFTimeRule>
+    </AFAnalysisTemplate>
+    <AFAnalysisTemplate>
+      <Name>Eng Oil Pr Avgs</Name>
+      <Target>Gas Compressor</Target>
+      <AFAnalysisRule>
+        <AFPlugIn>PerformanceEquation</AFPlugIn>
+        <ConfigString>X := '{65b442f2-80ac-4dfe-b8f0-8029a78544ac};Engine Oil Pressure';&#xD;
+Good__Data := BadVal(X);&#xD;
+Avg__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1h', '*');&#xD;
+Avg__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1hr;&#xD;
+Pct__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1hr * 100;&#xD;
+Avg__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1d', '*');&#xD;
+Avg__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1d;&#xD;
+Pct__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1d * 100;</ConfigString>
+        <VariableMapping>Avg__1hr||Engine Oil Pressure|1hr Avg;[GUID]||{d4f837ba-48a5-48d9-b623-86d1c30913ad};Avg__Dev__1hr||Engine Oil Pressure|1hr Avg Dev;[GUID]||{d7b5fb23-141e-4e4d-8d98-de6388c79756};Pct__Dev__1hr||Engine Oil Pressure|1hr Pct  Dev;[GUID]||{4adb53bc-61ad-4552-993b-b5a0d886bcba};Avg__1d||Engine Oil Pressure|1d Avg;[GUID]||{1058e40f-6157-4ac0-b74b-025092c02a6e};Avg__Dev__1d||Engine Oil Pressure|1d Avg Dev;[GUID]||{005af008-2333-442c-b5b8-2d4fef4678ec};Pct__Dev__1d||Engine Oil Pressure|1d Pct  Dev;[GUID]||{d42be0ef-ef8d-4029-b7bd-f7cab1a2a880};[GUID]||[UNSET];</VariableMapping>
+      </AFAnalysisRule>
+      <AFTimeRule>
+        <AFPlugIn>Natural</AFPlugIn>
+      </AFTimeRule>
+    </AFAnalysisTemplate>
+    <AFAnalysisTemplate>
+      <Name>Eng Oil Temp Avgs</Name>
+      <Target>Gas Compressor</Target>
+      <AFAnalysisRule>
+        <AFPlugIn>PerformanceEquation</AFPlugIn>
+        <ConfigString>X := '{e15f02f8-b3ee-4295-ae07-bacbf0b52026};Engine Oil Temp';&#xD;
+Good__Data := BadVal(X);&#xD;
+Avg__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1h', '*');&#xD;
+Avg__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1hr;&#xD;
+Pct__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1hr * 100;&#xD;
+Avg__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1d', '*');&#xD;
+Avg__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1d;&#xD;
+Pct__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1d * 100;</ConfigString>
+        <VariableMapping>Avg__1hr||Engine Oil Temp|1hr Avg;[GUID]||{8755c506-cce0-41b1-a42a-6c9fe5bddd31};Avg__Dev__1hr||Engine Oil Temp|1hr Avg Dev;[GUID]||{62aecdd3-f698-4c67-a2fc-15b5487cb32b};Pct__Dev__1hr||Engine Oil Temp|1hr Pct  Dev;[GUID]||{1c45ab58-a55e-47c6-8cc4-42c4f997d88c};Avg__1d||Engine Oil Temp|1d Avg;[GUID]||{b3d0968a-9d42-40a6-ac7d-b6f0e94ea73d};Avg__Dev__1d||Engine Oil Temp|1d Avg Dev;[GUID]||{826efe42-5406-4b4c-bb6e-2b333ffe637e};Pct__Dev__1d||Engine Oil Temp|1d Pct  Dev;[GUID]||{c0b4c58a-b0f4-48ca-8e23-49cdc02d92be};[GUID]||[UNSET];</VariableMapping>
+      </AFAnalysisRule>
+      <AFTimeRule>
+        <AFPlugIn>Natural</AFPlugIn>
+      </AFTimeRule>
+    </AFAnalysisTemplate>
+    <AFAnalysisTemplate>
+      <Name>Fuel Pr Avgs</Name>
+      <Target>Gas Compressor</Target>
+      <AFAnalysisRule>
+        <AFPlugIn>PerformanceEquation</AFPlugIn>
+        <ConfigString>X := '{f8355721-2fdd-4109-ba25-52a033faf2f2};Fuel Pressure';&#xD;
+Good__Data := BadVal(X);&#xD;
+Avg__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1h', '*');&#xD;
+Avg__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1hr;&#xD;
+Pct__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1hr * 100;&#xD;
+Avg__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1d', '*');&#xD;
+Avg__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1d;&#xD;
+Pct__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1d * 100;</ConfigString>
+        <VariableMapping>Avg__1hr||Fuel Pressure|1hr Avg;[GUID]||{b8956fca-3fe7-4419-a898-f24e83fae032};Avg__Dev__1hr||Fuel Pressure|1hr Avg Dev;[GUID]||{6ddf782e-23e6-4ef2-a5c8-a6f0e2fd9c3a};Pct__Dev__1hr||Fuel Pressure|1hr Pct  Dev;[GUID]||{44634ba2-0979-40c5-a627-9b50fdfa61e0};Avg__1d||Fuel Pressure|1d Avg;[GUID]||{6a31719f-5e6a-409f-a50d-1ec7336f489d};Avg__Dev__1d||Fuel Pressure|1d Avg Dev;[GUID]||{999723d5-37b8-4d8c-bc3d-eadcc825f832};Pct__Dev__1d||Fuel Pressure|1d Pct  Dev;[GUID]||{74e87e0b-cbf5-45f3-9424-1d2a98ee913a};[GUID]||[UNSET];</VariableMapping>
+      </AFAnalysisRule>
+      <AFTimeRule>
+        <AFPlugIn>Natural</AFPlugIn>
+      </AFTimeRule>
+    </AFAnalysisTemplate>
+    <AFAnalysisTemplate>
+      <Name>Ideal Flow Rate</Name>
+      <Description>Ideal Flow Rate</Description>
+      <Target>Gas Compressor</Target>
+      <AFAnalysisRule>
+        <AFPlugIn>PerformanceEquation</AFPlugIn>
+        <ConfigString>PresRatio := 22;&#xD;
+FFactor := 1.1;&#xD;
+hp := BadVal('{5269b6de-964e-4f1f-a253-198d0520870d};Horsepower');&#xD;
+rpm := BadVal('{8fa9681c-b6d6-424a-addc-b64eee056387};RPM');&#xD;
+mrpm := BadVal('{5e856100-dce6-4065-b976-c258c406f8bd};Max RPMs');&#xD;
+goodData := IF hp OR rpm OR mrpm&#xD;
+THEN False&#xD;
+ELSE True;&#xD;
+IdealFlowRate := IF goodData&#xD;
+THEN ('{5269b6de-964e-4f1f-a253-198d0520870d};Horsepower' / (PresRatio * '{7aaca68f-cfe8-4a07-bc88-92322ded1803};Compressor Stages' * FFactor* (Pow(PresRatio , 1/3))) * ('{8fa9681c-b6d6-424a-addc-b64eee056387};RPM'/ '{5e856100-dce6-4065-b976-c258c406f8bd};Max RPMs') ) * 1000&#xD;
+ELSE NoOutput();</ConfigString>
+        <VariableMapping>IdealFlowRate||Ideal Flow Rate;[GUID]||{482367fe-eeb7-4a03-8ac8-57815e29c500};[GUID]||[UNSET];</VariableMapping>
+      </AFAnalysisRule>
+      <AFTimeRule>
+        <AFPlugIn>Periodic</AFPlugIn>
+        <ConfigString>Frequency=3600</ConfigString>
+      </AFTimeRule>
+    </AFAnalysisTemplate>
+    <AFAnalysisTemplate>
+      <Name>Low Suck</Name>
+      <Target>Gas Compressor</Target>
+      <AFAnalysisRule>
+        <AFPlugIn>PerformanceEquation</AFPlugIn>
+        <ConfigString>var1 := BadVal('{ff810c57-cea5-4179-8d69-a82e26a4cbe0};Suction Pressure');&#xD;
+var3 := if (var1) then FALSE else TagVal('{ff810c57-cea5-4179-8d69-a82e26a4cbe0};Suction Pressure')-TagVal('{ff810c57-cea5-4179-8d69-a82e26a4cbe0};Suction Pressure','*-20m');&#xD;
+Variable3 := IF(var3&lt;-6) THEN "Y" ELSE "N";</ConfigString>
+        <VariableMapping>Variable3||Suction Pressure Decreasing;[GUID]||{dd9efd09-84c8-4d6c-a2c7-f804f87616da};[GUID]||[UNSET];</VariableMapping>
+      </AFAnalysisRule>
+      <AFTimeRule>
+        <AFPlugIn>Periodic</AFPlugIn>
+      </AFTimeRule>
+    </AFAnalysisTemplate>
+    <AFAnalysisTemplate>
+      <Name>RPM &amp; SucPr 7D Avg</Name>
+      <Description>RPM &amp; SucPr 7D Avg</Description>
+      <Target>Gas Compressor</Target>
+      <AFAnalysisRule>
+        <AFPlugIn>PerformanceEquation</AFPlugIn>
+        <ConfigString>avgRPM := TagAvg('{cb049278-72a1-4e83-b48f-7ef19301b7b2};RPM', 't-7d', 't');&#xD;
+outAvgRPM := If Not BadVal(avgRPM)&#xD;
+Then avgRPM&#xD;
+Else NoOutput();&#xD;
+avgSucPr := TagAvg('{ccff54a6-5efc-4933-84ee-a047afb63719};Suction Pressure', 't-7d', 't');&#xD;
+outAvgSucPr := If Not BadVal(avgSucPr)&#xD;
+Then avgSucPr&#xD;
+Else NoOutput();</ConfigString>
+        <VariableMapping>outAvgSucPr||Suction Pressure|7 Day Avg;[GUID]||{58826475-e19c-48cd-bde8-73902a182917};outAvgRPM||RPM|7 Day Avg;[GUID]||{ec6bf24b-b65e-4e37-8d7f-fa0c7b4aa937};[GUID]||[UNSET];</VariableMapping>
+      </AFAnalysisRule>
+      <AFTimeRule>
+        <AFPlugIn>Periodic</AFPlugIn>
+        <ConfigString>Offset=7920;Day=Sun, Mon, Tue, Wed, Thu, Fri, Sat</ConfigString>
+      </AFTimeRule>
+    </AFAnalysisTemplate>
+    <AFAnalysisTemplate>
+      <Name>RPM Avgs</Name>
+      <Target>Gas Compressor</Target>
+      <AFAnalysisRule>
+        <AFPlugIn>PerformanceEquation</AFPlugIn>
+        <ConfigString>X := '{8fa9681c-b6d6-424a-addc-b64eee056387};RPM';&#xD;
+Good__Data := BadVal(X);&#xD;
+Avg__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1h', '*');&#xD;
+Avg__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1hr;&#xD;
+Pct__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1hr * 100;&#xD;
+Avg__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1d', '*');&#xD;
+Avg__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1d;&#xD;
+Pct__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1d * 100;</ConfigString>
+        <VariableMapping>Avg__1hr||RPM|1hr Avg;[GUID]||{67899c5b-e0eb-4125-b855-25db5a9abd78};Avg__Dev__1hr||RPM|1hr Avg Dev;[GUID]||{80fc2b03-d0a4-4d5f-988e-96e2c94d01df};Pct__Dev__1hr||RPM|1hr Pct  Dev;[GUID]||{2ebf9286-5d54-4658-8cd5-b2521e00418d};Avg__1d||RPM|1d Avg;[GUID]||{85a0a805-08f0-4dfa-a57a-646ba6e5fe7c};Avg__Dev__1d||RPM|1d Avg Dev;[GUID]||{b445289a-94e4-4e02-a9e7-3809aa6bdff0};Pct__Dev__1d||RPM|1d Pct  Dev;[GUID]||{d464b2ba-fa32-434e-a9a1-8fcd48bb5d43};[GUID]||[UNSET];</VariableMapping>
+      </AFAnalysisRule>
+      <AFTimeRule>
+        <AFPlugIn>Natural</AFPlugIn>
+      </AFTimeRule>
+    </AFAnalysisTemplate>
+    <AFAnalysisTemplate>
+      <Name>Stage 1 Dsch Pr Avgs</Name>
+      <Target>Gas Compressor</Target>
+      <AFAnalysisRule>
+        <AFPlugIn>PerformanceEquation</AFPlugIn>
+        <ConfigString>X := '{edcdfbc0-308c-4277-bc1c-b1f140dbe361};Stage 1 Discharge Pressure';&#xD;
+Good__Data := BadVal(X);&#xD;
+Avg__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1h', '*');&#xD;
+Avg__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1hr;&#xD;
+Pct__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1hr * 100;&#xD;
+Avg__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1d', '*');&#xD;
+Avg__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1d;&#xD;
+Pct__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1d * 100;</ConfigString>
+        <VariableMapping>Avg__1hr||Stage 1 Discharge Pressure|1hr Avg;[GUID]||{e92acd3b-b3c3-4bda-a0ac-9927eeb63c54};Avg__Dev__1hr||Stage 1 Discharge Pressure|1hr Avg Dev;[GUID]||{f197e549-3ee8-42bc-af24-ff34f01b7205};Pct__Dev__1hr||Stage 1 Discharge Pressure|1hr Pct  Dev;[GUID]||{56173ece-c4bf-49a3-b2ff-effa905bce98};Avg__1d||Stage 1 Discharge Pressure|1d Avg;[GUID]||{83f1f6c0-4c27-488b-92ea-4f40d6d2be95};Avg__Dev__1d||Stage 1 Discharge Pressure|1d Avg Dev;[GUID]||{69f23d2c-5a6d-4458-9c02-54e2c00a77b5};Pct__Dev__1d||Stage 1 Discharge Pressure|1d Pct  Dev;[GUID]||{e65cbe34-4d8b-4158-ab85-5a1b88740942};[GUID]||[UNSET];</VariableMapping>
+      </AFAnalysisRule>
+      <AFTimeRule>
+        <AFPlugIn>Natural</AFPlugIn>
+      </AFTimeRule>
+    </AFAnalysisTemplate>
+    <AFAnalysisTemplate>
+      <Name>Stage 2 Dsch Pr Avgs</Name>
+      <Target>Gas Compressor</Target>
+      <AFAnalysisRule>
+        <AFPlugIn>PerformanceEquation</AFPlugIn>
+        <ConfigString>X := '{3c401aed-de0e-462f-85f5-ecf70eebbf09};Stage 2 Discharge Pressure';&#xD;
+Good__Data := BadVal(X);&#xD;
+Avg__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1h', '*');&#xD;
+Avg__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1hr;&#xD;
+Pct__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1hr * 100;&#xD;
+Avg__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1d', '*');&#xD;
+Avg__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1d;&#xD;
+Pct__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1d * 100;</ConfigString>
+        <VariableMapping>Avg__1hr||Stage 2 Discharge Pressure|1hr Avg;[GUID]||{19a3422e-2f83-40dd-9abd-9fd0e6269190};Avg__Dev__1hr||Stage 2 Discharge Pressure|1hr Avg Dev;[GUID]||{7d1fbdb8-2639-448f-a14e-3b978995d826};Pct__Dev__1hr||Stage 2 Discharge Pressure|1hr Pct  Dev;[GUID]||{7a9267b6-33b5-4c0e-ac04-cf705a9fe11b};Avg__1d||Stage 2 Discharge Pressure|1d Avg;[GUID]||{60d751ba-600e-40a9-95e6-e8e7dfe2921b};Avg__Dev__1d||Stage 2 Discharge Pressure|1d Avg Dev;[GUID]||{096f6267-a48a-40a9-be99-854db642f774};Pct__Dev__1d||Stage 2 Discharge Pressure|1d Pct  Dev;[GUID]||{b8540e68-eadc-4dce-ba0e-576a7a59cdd9};[GUID]||[UNSET];</VariableMapping>
+      </AFAnalysisRule>
+      <AFTimeRule>
+        <AFPlugIn>Natural</AFPlugIn>
+      </AFTimeRule>
+    </AFAnalysisTemplate>
+    <AFAnalysisTemplate>
+      <Name>Stage 3 Dsch Pr Avgs</Name>
+      <Target>Gas Compressor</Target>
+      <AFAnalysisRule>
+        <AFPlugIn>PerformanceEquation</AFPlugIn>
+        <ConfigString>X := '{c396b8fd-8cc6-465d-a954-cb2a4296a37d};Stage 3 Discharge Pressure';&#xD;
+Good__Data := BadVal(X);&#xD;
+Avg__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1h', '*');&#xD;
+Avg__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1hr;&#xD;
+Pct__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1hr * 100;&#xD;
+Avg__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1d', '*');&#xD;
+Avg__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1d;&#xD;
+Pct__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1d * 100;</ConfigString>
+        <VariableMapping>Avg__1hr||Stage 3 Discharge Pressure|1hr Avg;[GUID]||{4a2362f2-b300-4ab9-aa54-e076ceb7049a};Avg__Dev__1hr||Stage 3 Discharge Pressure|1hr Avg Dev;[GUID]||{df483dcf-8186-49f6-b034-b8d0bfb75640};Pct__Dev__1hr||Stage 3 Discharge Pressure|1hr Pct  Dev;[GUID]||{c7019c7d-8b23-4c3e-abfc-252a65eb8c90};Avg__1d||Stage 3 Discharge Pressure|1d Avg;[GUID]||{c62be22b-98c7-428f-8727-c76901eb5340};Avg__Dev__1d||Stage 3 Discharge Pressure|1d Avg Dev;[GUID]||{c3b4a990-d906-4a50-a3c5-1e4e2d129871};Pct__Dev__1d||Stage 3 Discharge Pressure|1d Pct  Dev;[GUID]||{33035378-4ba6-4cdf-8cb9-7f93564dce3c};[GUID]||[UNSET];</VariableMapping>
+      </AFAnalysisRule>
+      <AFTimeRule>
+        <AFPlugIn>Natural</AFPlugIn>
+      </AFTimeRule>
+    </AFAnalysisTemplate>
+    <AFAnalysisTemplate>
+      <Name>Suction Pr Avgs</Name>
+      <Target>Gas Compressor</Target>
+      <AFAnalysisRule>
+        <AFPlugIn>PerformanceEquation</AFPlugIn>
+        <ConfigString>X := '{ff810c57-cea5-4179-8d69-a82e26a4cbe0};Suction Pressure';&#xD;
+Good__Data := BadVal(X);&#xD;
+Avg__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1h', '*');&#xD;
+Avg__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1hr;&#xD;
+Pct__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1hr * 100;&#xD;
+Avg__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1d', '*');&#xD;
+Avg__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1d;&#xD;
+Pct__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1d * 100;</ConfigString>
+        <VariableMapping>Avg__1hr||Suction Pressure|1hr Avg;[GUID]||{66f29cc4-76ce-40c7-94b8-1b6b2df2a5df};Avg__Dev__1hr||Suction Pressure|1hr Avg Dev;[GUID]||{a4dc2675-e10c-41c3-94b5-3d866170611a};Pct__Dev__1hr||Suction Pressure|1hr Pct  Dev;[GUID]||{922080fb-443a-4b81-9e8c-be8ee89fae7b};Avg__1d||Suction Pressure|1d Avg;[GUID]||{62b599fb-2135-4754-9b98-cbd06a6e98a5};Avg__Dev__1d||Suction Pressure|1d Avg Dev;[GUID]||{fcc88ba0-f7dc-4e16-8b96-e9b93830f07c};Pct__Dev__1d||Suction Pressure|1d Pct  Dev;[GUID]||{eac727c7-6e9d-4bef-969d-be1798a81a36};[GUID]||[UNSET];</VariableMapping>
+      </AFAnalysisRule>
+      <AFTimeRule>
+        <AFPlugIn>Natural</AFPlugIn>
+      </AFTimeRule>
+    </AFAnalysisTemplate>
+    <AFAnalysisTemplate>
+      <Name>Suction Temp Avgs</Name>
+      <Target>Gas Compressor</Target>
+      <AFAnalysisRule>
+        <AFPlugIn>PerformanceEquation</AFPlugIn>
+        <ConfigString>X := '{0cd6c1eb-3756-4ef9-8e07-5d61b96d3754};Suction Temp';&#xD;
+Good__Data := BadVal(X);&#xD;
+Avg__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1h', '*');&#xD;
+Avg__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1hr;&#xD;
+Pct__Dev__1hr := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1hr * 100;&#xD;
+Avg__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else TagAvg(X, '*-1d', '*');&#xD;
+Avg__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else X - Avg__1d;&#xD;
+Pct__Dev__1d := IF   Good__Data&#xD;
+Then NoOutput()&#xD;
+Else Avg__Dev__1hr / Avg__1d * 100;</ConfigString>
+        <VariableMapping>Avg__1hr||Suction Temp|1hr Avg;[GUID]||{b778d117-01ea-4c01-a7b4-e547bd55eaee};Avg__Dev__1hr||Suction Temp|1hr Avg Dev;[GUID]||{ddfa45dc-dfa7-4260-9004-affb60442fc3};Pct__Dev__1hr||Suction Temp|1hr Pct  Dev;[GUID]||{8726ba2b-4af2-458b-84cf-ef16692632d8};Avg__1d||Suction Temp|1d Avg;[GUID]||{fef07cf9-cffc-4e83-8a31-47d094557271};Avg__Dev__1d||Suction Temp|1d Avg Dev;[GUID]||{dfc05bf7-cbe9-4fd2-baae-3935a849dc63};Pct__Dev__1d||Suction Temp|1d Pct  Dev;[GUID]||{3c256162-ecd4-4890-99b8-cc4726e3746b};[GUID]||[UNSET];</VariableMapping>
+      </AFAnalysisRule>
+      <AFTimeRule>
+        <AFPlugIn>Natural</AFPlugIn>
+      </AFTimeRule>
+    </AFAnalysisTemplate>
+    <AFAnalysisTemplate>
+      <Name>Throughput</Name>
+      <Description>Throughput</Description>
+      <Target>Gas Compressor</Target>
+      <AFAnalysisRule>
+        <AFPlugIn>PerformanceEquation</AFPlugIn>
+        <ConfigString>Bad := BadVal('{23ca510a-4703-41c4-a9ff-9b283f5325e8};Gas Flow Rate') OR BadVal('{b47f431b-6895-4f62-a8a8-6c39162f8060};Max Gas Flowrate');&#xD;
+Thruput := IF    NOT Bad&#xD;
+THEN '{23ca510a-4703-41c4-a9ff-9b283f5325e8};Gas Flow Rate' / '{b47f431b-6895-4f62-a8a8-6c39162f8060};Max Gas Flowrate' * 100&#xD;
+ELSE  NoOutput();</ConfigString>
+        <VariableMapping>Thruput||Throughput;[GUID]||{74adf04c-b76b-4445-9242-38cf49894b37};[GUID]||[UNSET];</VariableMapping>
+      </AFAnalysisRule>
+      <AFTimeRule>
+        <AFPlugIn>Periodic</AFPlugIn>
+        <ConfigString>Frequency=300</ConfigString>
+      </AFTimeRule>
+    </AFAnalysisTemplate>
+  </AFElementTemplate>
+</AF>
